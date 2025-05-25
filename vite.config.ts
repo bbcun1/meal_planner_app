@@ -10,9 +10,8 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'dist',
     rollupOptions: {
-      input: path.resolve(__dirname, 'index.html')
+      input: 'index.html' // Now looks in root
     }
   }
 })
