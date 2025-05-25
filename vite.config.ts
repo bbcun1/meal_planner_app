@@ -4,11 +4,12 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  publicDir: 'public', // Explicitly set public directory
+  root: path.resolve(__dirname, 'public'), // Set public as root during build
   build: {
-    outDir: 'dist',
+    outDir: '../dist', // Output goes to dist folder
+    emptyOutDir: true,
     rollupOptions: {
-      input: path.resolve(__dirname, 'public/index.html') // Point to HTML in public
+      input: path.resolve(__dirname, 'public/index.html')
     }
   }
 })
