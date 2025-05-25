@@ -1,4 +1,3 @@
-cat > package.json << 'EOL'
 {
   "name": "meal-planner",
   "private": true,
@@ -24,4 +23,3 @@ cat > package.json << 'EOL'
     "vite": "^5.0.8"
   }
 }
-EOL
